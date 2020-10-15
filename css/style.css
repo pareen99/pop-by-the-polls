@@ -39,7 +39,8 @@ main > article > section {
         padding: 65px 40px;
         max-width: 1300px;
         margin: 0px auto;
-}
+    }
+}    
 /* Grid Styles */
 
 @media(min-width: 768px) {
@@ -182,5 +183,4 @@ footer {
 }
 
 footer a {
-    color: white;
-}
+    color: white;}
