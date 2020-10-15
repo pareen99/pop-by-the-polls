@@ -24,9 +24,16 @@ figure {
     margin: 0;
 }
 
+
 /* Section Styles */
 main > article > section {
     padding: 65px 20px;
+}
+
+@media (min-width: 768px) {
+    main > article > section > header > p {
+        max-width: 50%;
+    }
 }
 /* Grid Styles */
 
@@ -35,10 +42,7 @@ main > article > section {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .card-grid-1-2 img {
-        object-fit: cover;
-        height: 100%;
-    }
+
     .grid-1-4 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -59,6 +63,14 @@ main > article > section {
 .card p {
     font-size: 17px;
 }
+.card-grid-1-2 img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.card-grid-1-2 section {
+padding: 40px;
+}
 /* Header Styles */
 
 main > article > header {
@@ -68,6 +80,7 @@ main > article > header {
     height: calc(100vh - 80px);
     display: flex;
     flex-direction: column-reverse;
+    justify-content: space-around;
 }
 
 main > article > header h1 {
@@ -90,7 +103,7 @@ main > article > header a {
     }
 
     /*main header should have grip gap of 40px*/
-    main > article > header .grid-1-2 {
+    main > article > header.grid-1-2 {
         grid-gap: 100px;
     }
 }
