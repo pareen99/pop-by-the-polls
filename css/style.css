@@ -38,6 +38,11 @@ main > article > section {
         object-fit: cover;
         height: 100%;
     }
+    .grid-1-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 40px;
+    }
 }
 
 /* Card Styles */
@@ -60,6 +65,8 @@ main > article > header {
     color: white;
     padding: 0px 20px;
     height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 main > article > header h1 {
@@ -75,6 +82,17 @@ main > article > header a {
     display: inline-block;
 }
 
+@media (min-width: 768px) {
+    main > article > header {
+        height: unset;
+        padding: 100px 20px;
+    }
+
+    /*main header should have grip gap of 40px*/
+    main > article > header .grid-1-2 {
+        grid-gap: 100px;
+    }
+}
 /* Button Styles */
 
 /* Navbar Styles */
