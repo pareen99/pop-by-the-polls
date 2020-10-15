@@ -37,13 +37,13 @@ main > article > section {
 }
 /* Grid Styles */
 
-@media(min-width: 768px;) {
-    .grid-1-2 {
+@media(min-width: 768px) {
+.grid-1-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .grid-1-4 {
+.grid-1-4 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 40px;
@@ -85,6 +85,10 @@ main > article > header {
 
 main > article > header h1 {
     margin-top: 0px;
+}
+
+main > article > header img {
+    opacity: 0.5;
 }
 
 main > article > header a {
